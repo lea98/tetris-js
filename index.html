@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Tetris</title>
+    
+        <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+  <h1>T E T R I S</h1>
+
+  <div id="both">
+    <canvas id="canvas" width="300" height="600" style="border:3px solid black;"></canvas>
+    
+    <div id="info">
+        <span style="background-color: black;color:white;padding:0.2em">Rezultat: <div id="score">0</div> </span>
+        <br><br>
+        <button onClick="window.location.reload();">NOVA IGRA</button>
+        <br><br>
+
+        <div style="color:white;font-size: 15px;">&larr; = lijevo</div><br>
+        <div style="color:white;font-size: 15px;">&uarr; = rotacija</div><br>
+        <div style="color:white;font-size: 15px;">&rarr; = desno</div><br>
+        <div style="color:white;font-size: 15px;">&darr; = dolje</div><br><br>
+
+        <div  class="arr"><button id="gore" onclick="CONTROLCLICK('up')">&uarr;</button></div>
+        <div id="livoDesno">
+        <div class="arr"><button id="livo" onclick="CONTROLCLICK('left')">&larr;</button></div>
+        <div class="arr"><button id="desno" onclick="CONTROLCLICK('right')">&rarr;</button></div>
+         </div>
+        <div class="arr"><button id="doli" onclick="CONTROLCLICK('down')">&darr;</button></div>
+
+    </div>
+
+    </div>
+
+    <script src="tetrominoes.js"></script>
+    <script src="tetris.js"></script>
+    <script src="controls.js"></script>
+
+</body>
+</html>
